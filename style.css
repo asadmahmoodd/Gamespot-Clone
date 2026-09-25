@@ -1,0 +1,178 @@
+body
+{   
+    margin:0;
+    font-family: kanit;
+    
+}
+
+
+.navbar
+{
+    background-color:rgb(255, 197, 1) ;
+    display: flex;
+    justify-content:space-evenly;
+    min-height: 4rem;
+    box-sizing: content-box;
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.logo img
+{
+    display: block;
+}
+.logo:hover
+{
+    cursor: pointer;
+}
+
+.navbar-links
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   padding: 0 1.25rem;
+   
+}
+
+.search-login
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#search-logo:hover
+{
+   cursor: pointer;
+}
+
+.links:hover #caret
+{
+    transform: scaleY(-1);
+}
+.links
+{
+  border-bottom: 0.4rem solid transparent;
+  border-top: 0.4rem solid transparent;
+  position: relative;
+
+}
+
+.dropdown
+{
+    position: absolute;
+    top:calc(100% + 0.4rem);
+    left:0;
+    background-color: #ffff;
+    padding:1.5rem;
+    box-sizing: content-box;
+    padding-top: 0.7rem;
+    display: none;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.12);;
+}
+
+.dropdownlinks
+{
+    padding: 0.7rem;
+    width: 13rem;
+    box-sizing: content-box;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+.dropdownlinks:hover
+{
+    background-color: #e5e8e8;
+    cursor: pointer;
+}
+
+.links:hover
+{
+    border-bottom: 0.4rem solid rgb(0, 64, 87);
+    border-top: 0.4rem solid transparent;
+    cursor: pointer;
+}
+
+.links:hover .dropdown
+{
+    display: block;
+}
+
+#sign-btn
+{
+    border: none;
+    padding: 0.55rem 1.4rem;
+    border-radius:0.35rem;
+    font-weight: 600;
+}
+#sign-btn:hover
+{
+    outline:1px solid rgb(130, 130, 130);
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.trending-bar p
+{
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.trending-list
+{
+    padding-left: 0;
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.trending-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.6rem 5.5rem;
+    background-color: rgb(249, 236, 217);
+    font-weight: 380;
+    font-size:10.5pt;
+}
+
+.trending-list-items:hover
+{
+    color: rgb(200, 18, 0);
+    cursor: pointer;
+}
+
+.trending-list-items
+{
+    transition: color 0.35s ease;
+    padding: 0 0.22rem;
+}
+.trending-list-items::before
+{
+    content:"| ";
+    padding:0 0.3rem;
+    font-weight: 200;
+    color: rgb(204, 209, 210);
+}
