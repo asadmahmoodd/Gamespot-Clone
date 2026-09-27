@@ -176,3 +176,27 @@ nav
     font-weight: 200;
     color: rgb(204, 209, 210);
 }
+
+.vertical-line
+{
+    border-left: 1px solid black;
+    display: flex;
+}
+
+.hero-section
+{
+    display: flex;
+}
+
+.main-blog 
+{
+    width:50%
+}
+.main-blog img
+{
+    width: 100%;
+}
+.main-container
+{
+    margin: 4rem;
+}
